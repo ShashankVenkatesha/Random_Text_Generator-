@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import twitterIcon from '../twitter.svg';
-import tumblrIcon from '../tumblr.svg';
-
 const Quotes = () => {
   const [body, setQuote] = useState('');
   const [title, setAuthor] = useState('');
@@ -35,14 +32,6 @@ const Quotes = () => {
       <div id="author"><p>{title}</p></div>
 
       <div id="buttons">
-        {/* <div className="social-media">
-          <a href="#" id="twet-quote">
-            <span><img src={twitterIcon} alt="" /></span>
-          </a>
-          <a href="#" id="tumlr-quote">
-            <span><img src={tumblrIcon} alt="" /></span>
-          </a>
-        </div> */}
         <button onClick={handleClick} id="new-quote">New Quote</button>
       </div>
     </div>
